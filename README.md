@@ -1,14 +1,14 @@
 # Add2Num – Big Number Adder
 
-| Field         | Value                       |
-|---------------|-----------------------------|
-| **Project**   | Add 2 Numbers               |
-| **Version**   | 0.0.1                       |
-| **Language**   | Python 3.10+               |
-| **Create Date**| 2017-10-01                 |
-| **Creator**   | Nhi.Tran                    |
-| **Update Date**| 2026-03-11                 |
-| **Updater**   | Nhi.Tran                   |
+| Field          | Value                       |
+|--------------- |-----------------------------|
+| **Project**    | Add 2 Numbers               |
+| **Version**    | 0.0.1                       |
+| **Language**   | Python 3.10+                |
+| **Create Date**| 2017-10-01                  |
+| **Creator**    | Nhi.Tran                    |
+| **Update Date**| 2026-03-11                  | 
+| **Updater**    | Nhi.Tran                    |
 
 ## Mô tả
 
@@ -51,7 +51,7 @@ python3 main.py
 ```
 Kết quả mẫu:
 =============================================
-  Add2Num – Big Number Adder (Python demo)
+  Add2Num – Big Number Adder 
 =============================================
 Step 1: digit1=4  digit2=8  carry_in=0  total=12  digit_out=2  carry_out=1
 Step 2: digit1=3  digit2=7  carry_in=1  total=11  digit_out=1  carry_out=1
