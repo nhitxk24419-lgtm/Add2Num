@@ -6,9 +6,9 @@
 | **Version**   | 0.0.1                       |
 | **Language**   | Python 3.10+               |
 | **Create Date**| 2017-10-01                 |
-| **Creator**   | Thach.Le                    |
+| **Creator**   | Nhi.Tran                    |
 | **Update Date**| 2026-03-11                 |
-| **Updater**   | Thach.Le                    |
+| **Updater**   | Nhi.Tran                   |
 
 ## Mô tả
 
@@ -21,9 +21,8 @@ Add2Num/
 ├── my_big_number.py        # Lớp MyBigNumber – phần lõi (core)
 ├── main.py                 # Ứng dụng demo console
 ├── test_my_big_number.py   # Unit tests (14 test cases)
-├── benchmark.py            # Benchmark hiệu năng
 ├── conftest.py             # Cấu hình pytest
-└── README.md               # Hướng dẫn (file này)
+└── README.md               # Hướng dẫn 
 ```
 
 ## Yêu cầu hệ thống
