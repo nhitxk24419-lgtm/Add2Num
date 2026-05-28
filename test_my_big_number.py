@@ -4,7 +4,7 @@ Run with:  python -m pytest tests/ -v
 """
 
 import unittest
-from my_big_number import MyBigNumber
+from MyBigNumber import MyBigNumber
 
 
 class TestMyBigNumber(unittest.TestCase):

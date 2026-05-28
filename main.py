@@ -2,7 +2,7 @@
 Demo console app – shows how to call MyBigNumber.sum().
 """
 
-from my_big_number import MyBigNumber
+from MyBigNumber import MyBigNumber
 
 
 def main():
