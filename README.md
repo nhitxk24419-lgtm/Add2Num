@@ -39,41 +39,32 @@ pip install pytest
 ## Cách chạy
 
 ### 1. Clone dự án
-
-```bash
-# Ví dụ: dự án trên GitHub tại https://github.com/youraccount/Add2Num
 # Trên macOS/Linux:
 mkdir -p ~/Projects/github.com/youraccount
 cd ~/Projects/github.com/youraccount
 git clone https://github.com/youraccount/Add2Num.git
 cd Add2Num
-```
 
 ### 2. Chạy demo
-
 ```bash
 python3 main.py
 ```
-
 Kết quả mẫu:
-
-```
 =============================================
   Add2Num – Big Number Adder (Python demo)
 =============================================
-                    1234  +  897                     =  2131
-                       0  +  0                       =  0
-                    9999  +  9999                    =  19998
-    99999999999999999999  +  1                       =  100000000000000000000
-=============================================
-```
+Step 1: digit1=4  digit2=8  carry_in=0  total=12  digit_out=2  carry_out=1
+Step 2: digit1=3  digit2=7  carry_in=1  total=11  digit_out=1  carry_out=1
+Step 3: digit1=2  digit2=6  carry_in=1  total=9   digit_out=9  carry_out=0
+Step 4: digit1=1  digit2=5  carry_in=0  total=6   digit_out=6  carry_out=0
 
+Result: 1234 + 5678 = 6912
+=============================================
 ### 3. Chạy Unit Testing
 
 ```bash
 python3 -m pytest test_my_big_number.py -v
 ```
-
 Kết quả mong đợi:
 
 ```
@@ -94,41 +85,12 @@ test_my_big_number.py::TestMyBigNumber::test_zero_plus_zero PASSED
 
 14 passed
 ```
-
-### 4. Chạy Benchmark
-
-```bash
-python3 benchmark.py
-```
-
-## Thuật toán
-
-Ví dụ: `sum("1234", "897")`
-
-```
-     1 2 3 4
-   +   8 9 7
-   ---------
-```
-
-| Bước | digit1 | digit2 | carry_in | Tổng | digit_out | carry_out | Kết quả |
-|------|--------|--------|----------|------|-----------|-----------|---------|
-| 1    | 4      | 7      | 0        | 11   | 1         | 1         | "1"     |
-| 2    | 3      | 9      | 1        | 13   | 3         | 1         | "31"    |
-| 3    | 2      | 8      | 1        | 11   | 1         | 1         | "131"   |
-| 4    | 1      | 0      | 1        | 2    | 2         | 0         | "2131"  |
-
-**Kết quả**: `"2131"` ✅
-
-### Cách tiếp cận
-
 Tạo sẵn mảng kết quả có kích thước `max(len1, len2) + 1`, sau đó điền từng chữ số từ phải sang trái vào đúng vị trí. Cuối cùng `join` mảng lại thành chuỗi.
 
 ```python
 result = ['0'] * max_len
 # Điền từ phải sang trái
-result[k] = str(digit_out)    # k giảm dần
-```
+result[k] = str(digit_out)    # k giảm dần```
 
 ## Logging
 
